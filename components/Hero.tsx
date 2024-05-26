@@ -2,6 +2,7 @@ import { FaLocationArrow } from "react-icons/fa6";
 import MagicButton from "./ui/MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import { IoMdCloudDownload } from "react-icons/io";
 
 const Hero = () => {
   return (
@@ -28,21 +29,25 @@ const Hero = () => {
         <div className="flex justify-center relative my-20 z-10">
           <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex-col items-center justify-center">
             <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-880">
-              Dynamic Web Magic With Next.js
+              Elevating Digital Experiences with Cutting-Edge Development
             </h2>
             <TextGenerateEffect
               className="text-center text-[40px] md:text-5xl lg:text-6xl"
-              words="Transforming Concepts into Seamless User Experience"
+              words="Transforming Ideas into Seamless User Interactions"
             />
             <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
               {" "}
               Hi, I&lsquo;m Precious, a Frontend Developer
             </p>
 
-            <a href="#about" className="flex justify-center">
+            <a
+              href="https://drive.google.com/file/d/1MpnptHKCZr-o18y-VaDUlU2b2RCaCEEM/view"
+              target="_blank"
+              className="flex justify-center"
+            >
               <MagicButton
-                title="Show My Work"
-                icon={<FaLocationArrow />}
+                title="Download CV"
+                icon={<IoMdCloudDownload />}
                 position="right"
               />
             </a>

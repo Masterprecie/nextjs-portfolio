@@ -5,7 +5,8 @@ const Testimonials = () => {
   return (
     <div className="pb-10" id="testimonials">
       <h1 className="heading">
-        Kind Words from <span className="text-purple"> Satisified Clients</span>
+        Testimonials from{" "}
+        <span className="text-purple"> Delighted Collaborators</span>
       </h1>
       <div className="flex flex-col items-center mt-10">
         <InfiniteMovingCards
