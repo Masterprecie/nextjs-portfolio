@@ -111,21 +111,21 @@ export const testimonials = [
     quote:
       "Precious has consistently demonstrated a keen eye for detail, a strong work ethic, and commitment to staying abreast of industry developments. He possesses  unique ability to identify and prioritize key aspects of a project, ensuring timely and effective delivery. His exceptional teamwork and collaboration skills have earned him recognition as a valuable asset to any team.",
     name: "Alabi Timothy",
-    title: "Fullstack Developer",
+    title: "Software Developer",
     image: "/testimony1.jpg",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-    image: "/profile.svg",
+      "Precious is one of the most outstanding Web developers I've met. Coupled with the fact that he is big on following standard programming principles, his code is pretty easy to read and understand, and he writes very efficient code. he is one of the Best out there.",
+    name: "Aiyegbajeje Yusuf",
+    title: "FullStack Instructor",
+    image: "/testimonial2.jpeg",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "I and Precious collaborated on various projects as frontend web developers, and he consistently impressed with his technical prowess, creativity, and commitment to delivering high-quality results. Precious is not only proficient in coding but also excels in effective communication and problem-solving. A true team player, I highly recommend him any day, anytime.",
+    name: "Frank Obika",
+    title: "Frontend Developer",
     image: "/profile.svg",
   },
   {
