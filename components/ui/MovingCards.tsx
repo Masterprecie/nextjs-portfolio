@@ -93,7 +93,7 @@ export const InfiniteMovingCards = ({
               backgroundColor:
                 "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
             }}
-            key={item.idx}
+            key={idx}
           >
             <blockquote>
               <div
