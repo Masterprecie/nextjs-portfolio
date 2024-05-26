@@ -2,20 +2,21 @@ import { projects } from "@/utils/data";
 import { PinContainer } from "./ui/3d-pin";
 import { FaLocationArrow } from "react-icons/fa6";
 import Link from "next/link";
+import Image from "next/image";
 // import { div } from "three/examples/jsm/nodes/Nodes.js";
 
 const RecentProjects = () => {
   return (
-    <div className="py-20" id="projects">
+    <div className="py-10" id="projects">
       <h1 className="heading">
         A small selection of{" "}
         <span className="text-purple"> recent projects</span>
       </h1>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10">
+      <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-4 ">
         {projects.map(({ id, title, des, img, iconLists, link }) => (
           <div
             key={id}
-            className="lg:min-h-[32.5rem] sm:h-[41rem] h-[32rem] flex items-center justify-center sm:w-[500px] w-[80vw]"
+            className="lg:min-h-[32.5rem]  h-[32rem] md:h-[20rem] flex items-center justify-center sm:w-[500px] w-[80vw]"
           >
             <PinContainer title={link} href={link}>
               {/* <Link href={link} target="_blank"> */}
@@ -41,7 +42,13 @@ const RecentProjects = () => {
                       className="border border-white/[0.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex items-center justify-center"
                       style={{ transform: `translateX(-${5 * index * 2}px)` }}
                     >
-                      <img src={icon} alt={icon} className="p-2" />
+                      <Image
+                        src={icon}
+                        alt={icon}
+                        width={100}
+                        height={100}
+                        className="p-2"
+                      />
                     </div>
                   ))}
                 </div>
@@ -50,7 +57,7 @@ const RecentProjects = () => {
                   <Link
                     href={link}
                     target="_blank"
-                    className="flex lg:text-xl m:text-xs text-sm text-purple"
+                    className="flex lg:text-sm text-xs  text-purple"
                   >
                     Check Live Site
                   </Link>

@@ -74,35 +74,35 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
+    title: "E-Commerce store",
     des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
+    img: "/project1.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    link: "https://preshstores.netlify.app/",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
+    title: "Market Place WebApp - Tredah",
+    des: "Connect Nigerian Manufacturers to Asian Markets & Asian Buyers to Nigerian Product",
+    img: "/project2.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    link: "https://www.tredah.com/",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
+    title: "Portfolio Website",
     des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
+    img: "/project3.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
+    link: "https://justinaovat.com/",
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
+    title: "Network Management Website",
+    des: "A Webapplication that empowers businesses with innovative network monitoring solutions that ensure reliability and proactive management.",
+    img: "/project4.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
+    link: "https://nextelplus.net/",
   },
 ];
 
@@ -111,7 +111,7 @@ export const testimonials = [
     quote:
       "Precious has consistently demonstrated a keen eye for detail, a strong work ethic, and commitment to staying abreast of industry developments. He possesses  unique ability to identify and prioritize key aspects of a project, ensuring timely and effective delivery. His exceptional teamwork and collaboration skills have earned him recognition as a valuable asset to any team.",
     name: "Alabi Timothy",
-    title: "Software Developer",
+    title: "Software Engineer",
     image: "/testimony1.jpg",
   },
   {
@@ -128,81 +128,48 @@ export const testimonials = [
     title: "Frontend Developer",
     image: "/profile.svg",
   },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-    image: "/profile.svg",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-    image: "/profile.svg",
-  },
-];
-
-export const companies = [
-  {
-    id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
-  },
-  {
-    id: 2,
-    name: "appwrite",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
-  },
-  {
-    id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
-  },
-  {
-    id: 4,
-    name: "stream",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
-  },
-  {
-    id: 5,
-    name: "docker.",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
-  },
+  // {
+  //   quote:
+  //     "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+  //   name: "Bethel Ukazu",
+  //   title: "CEO Thels Impact Consulting",
+  // image: "/testimonial4.jpeg",
+  // },
+  // {
+  //   quote:
+  //     "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+  //   name: "Udhe Austine",
+  //   title: "Frontend Developer",
+  //   image: "/profile.svg",
+  // },
 ];
 
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Frontend Developer - Thels Impact",
+    desc: "Developed and maintained user-facing features using modern frontend technologies, ensuring high performance and responsiveness on all devices.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-    className: "md:col-span-2", // change to md:col-span-2
+    title: "Software Engineer - ALX",
+    desc: "Completed the ALX Software Engineering program remotely, gaining proficiency in Linux OS, command-line, advanced Git/GitHub, Python, HTML/CSS, JavaScript, TypeScript, and React..",
+    className: "md:col-span-2",
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    className: "md:col-span-2", // change to md:col-span-2
+    title: "Frontend Developer - KodeCamp",
+    desc: "Played a key role in the development of a web-based application using React.js, focusing on enhancing interactivity and user engagement. Collaborated with the team to implement innovative features and ensure seamless performance across different devices.",
+    className: "md:col-span-2",
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "Frontend Developer Intern - KodeHauz",
+    desc: "Worked with the design team to ensure technical feasibility of UI/UX designs. Developed and maintained user-facing features with modern frontend technologies, ensuring high performance and responsiveness across all devices.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
@@ -224,21 +191,4 @@ export const socialMedia = [
     img: "/link.svg",
     link: "https://www.linkedin.com/in/ikpa-precious-475675166/",
   },
-];
-
-export const leftLists = [
-  "React Js",
-  "Next Js",
-  "TypeScript",
-  "Redux",
-  "Node Js",
-  "Express Js",
-];
-export const rightLists = [
-  "Bootstrap",
-  "Tailwind CSS",
-  "SCSS",
-  "Material UI",
-  "Chakra UI",
-  "Framer Motion",
 ];
