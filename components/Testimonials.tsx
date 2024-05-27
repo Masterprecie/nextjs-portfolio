@@ -3,7 +3,7 @@ import { InfiniteMovingCards } from "./ui/MovingCards";
 
 const Testimonials = () => {
   return (
-    <div className="pb-10" id="testimonials">
+    <div className="py-20" id="testimonials">
       <h1 className="heading">
         Testimonials from{" "}
         <span className="text-purple"> Delighted Collaborators</span>
