@@ -2,13 +2,10 @@ import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
-import Loading from "@/components/Loading";
 import RecentProjects from "@/components/RecentProjects";
 import Testimonials from "@/components/Testimonials";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import { navItems } from "@/utils/data";
-
-
 
 export default function Home() {
   return (
