@@ -43,7 +43,7 @@ const Hero = () => {
             </p>
 
             <a
-              href="https://drive.google.com/file/d/1MpnptHKCZr-o18y-VaDUlU2b2RCaCEEM/view"
+              href="https://drive.google.com/file/d/1opUDI_1XqTS0MttHtcqCqytIuFqkJQD1/view?usp=sharing"
               target="_blank"
               className="flex justify-center"
             >
