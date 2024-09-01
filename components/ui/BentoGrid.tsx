@@ -1,17 +1,18 @@
 "use client";
 
-import { useState } from "react";
-import { IoCopyOutline } from "react-icons/io5";
+// import { IoCopyOutline } from "react-icons/io5";
 
-import Lottie from "react-lottie";
+// import Lottie from "react-lottie";
 
 import { BackgroundGradientAnimation } from "./GradientBg";
 import GridGlobe from "./GridGlobe";
 import { cn } from "@/utils/cn";
 import MagicButton from "./MagicButton";
-import animationData from "@/utils/confetti.json";
+// import animationData from "@/utils/confetti.json";
 import Image from "next/image";
-
+import BookingModal from "../Modal";
+import { useState } from "react";
+import { RiCalendarScheduleFill } from "react-icons/ri";
 export const BentoGrid = ({
   className,
   children,
@@ -50,25 +51,30 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["ReactJS", "NextJS", "Typescript"];
+  const leftLists = ["ReactJS", "NextJS", "Typescript", "NodeJs"];
   const rightLists = ["TailwindCSS", "SCSS", "MaterialUI"];
 
-  const [copied, setCopied] = useState(false);
+  // const [copied, setCopied] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
-  const defaultOptions = {
-    loop: copied,
-    autoplay: copied,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
+  const handleLinkClick = (event: { preventDefault: () => void }) => {
+    event.preventDefault();
+    setShowModal(true);
   };
+  // const defaultOptions = {
+  //   loop: copied,
+  //   autoplay: copied,
+  //   animationData: animationData,
+  //   rendererSettings: {
+  //     preserveAspectRatio: "xMidYMid slice",
+  //   },
+  // };
 
-  const handleCopy = () => {
-    const text = "ikpaprecious2@gmail.com";
-    navigator.clipboard.writeText(text);
-    setCopied(true);
-  };
+  // const handleCopy = () => {
+  //   const text = "ikpaprecious2@gmail.com";
+  //   navigator.clipboard.writeText(text);
+  //   setCopied(true);
+  // };
 
   return (
     <div
@@ -136,9 +142,9 @@ export const BentoGridItem = ({
 
           {/* Tech stack */}
           {id === 3 && (
-            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
+            <div className="flex gap-1 lg:gap-3 w-fit absolute -right-3 lg:-right-2">
               {/* tech stack lists */}
-              <div className="flex flex-col gap-3 ">
+              <div className="flex flex-col gap-1">
                 {leftLists.map((item, i) => (
                   <span
                     key={i}
@@ -150,7 +156,7 @@ export const BentoGridItem = ({
                 ))}
                 <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
               </div>
-              <div className="flex flex-col gap-3 ">
+              <div className="flex flex-col gap-1 ">
                 <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
                 {rightLists.map((item, i) => (
                   <span
@@ -165,26 +171,40 @@ export const BentoGridItem = ({
             </div>
           )}
           {id === 6 && (
-            <div className="mt-5 relative">
-              <div
+            <div className="mt-5 ">
+              <div>
+                {/* <div
                 className={`absolute -bottom-5 right-0 ${
                   copied ? "block" : "block"
                 }`}
               >
                 <Lottie options={defaultOptions} height={200} width={400} />
-              </div>
+              </div> */}
 
-              <MagicButton
+                {/* <MagicButton
                 title={copied ? "Email is Copied!" : "Copy my email address"}
                 icon={<IoCopyOutline />}
                 position="left"
                 handleClick={handleCopy}
                 otherClasses="!bg-[#161A31]"
-              />
+              /> */}
+                <MagicButton
+                  title=" Book a session"
+                  icon={<RiCalendarScheduleFill />}
+                  position="right"
+                  href="https://calendar.app.google/tTvKFX2mt2ovM5Ru8"
+                  handleClick={handleLinkClick}
+                />
+              </div>
             </div>
           )}
         </div>
       </div>
+      <BookingModal
+        show={showModal}
+        onClose={() => setShowModal(false)}
+        url="https://calendar.app.google/tTvKFX2mt2ovM5Ru8"
+      />
     </div>
   );
 };

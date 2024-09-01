@@ -51,7 +51,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "I am currently learning NodeJs",
+    title: "I am currently learning Angular ",
     description: "The Insider's View",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",

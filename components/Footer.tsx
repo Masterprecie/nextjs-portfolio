@@ -1,11 +1,22 @@
+"use client";
 /* eslint-disable @next/next/no-img-element */
 import { socialMedia } from "@/utils/data";
 import { FaLocationArrow } from "react-icons/fa6";
 import MagicButton from "./ui/MagicButton";
 import Link from "next/link";
 import Image from "next/image";
+import BookingModal from "./Modal";
+import { useState } from "react";
+import { RiCalendarScheduleFill } from "react-icons/ri";
 
 const Footer = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleLinkClick = (event: { preventDefault: () => void }) => {
+    event.preventDefault();
+    setShowModal(true);
+  };
+
   return (
     <footer className="w-full pt-20 pb-10" id="contact">
       {/* background grid */}
@@ -26,13 +37,20 @@ const Footer = () => {
           Contact me today, and let&apos;s discuss how I can assist you in
           achieving your goals.
         </p>
-        <Link href="mailto:ikpaprecious2@gmail.com">
-          <MagicButton
-            title="Let's get in touch"
-            icon={<FaLocationArrow />}
-            position="right"
-          />
-        </Link>
+
+        <MagicButton
+          title=" Book a session"
+          icon={<RiCalendarScheduleFill />}
+          position="right"
+          href="https://calendar.app.google/tTvKFX2mt2ovM5Ru8"
+          handleClick={handleLinkClick}
+        />
+
+        <BookingModal
+          show={showModal}
+          onClose={() => setShowModal(false)}
+          url="https://calendar.app.google/tTvKFX2mt2ovM5Ru8"
+        />
       </div>
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
         <p className="md:text-base text-sm md:font-normal font-light">

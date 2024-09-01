@@ -39,7 +39,7 @@ const Hero = () => {
             <Word />
             <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
               {" "}
-              Hi, I&lsquo;m Precious, a Frontend Developer
+              Hi, I&lsquo;m Precious, a Full Stack Developer
             </p>
 
             <a
