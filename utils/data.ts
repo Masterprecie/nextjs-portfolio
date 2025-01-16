@@ -51,7 +51,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "I am currently learning Angular ",
+    title: "I am currently learning React Native ",
     description: "The Insider's View",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -102,13 +102,21 @@ export const projects = [
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg"],
     link: "https://justinaovat.com/",
   },
+  // {
+  //   id: 4,
+  //   title: "Network Management Website",
+  //   des: "A Web application that empowers businesses with innovative network monitoring solutions that ensure reliability and proactive management.",
+  //   img: "/project4.webp",
+  //   iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
+  //   link: "https://nextelplus.net/",
+  // },
   {
     id: 4,
-    title: "Network Management Website",
-    des: "A Web application that empowers businesses with innovative network monitoring solutions that ensure reliability and proactive management.",
-    img: "/project4.webp",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
-    link: "https://nextelplus.net/",
+    title: "WatchBuddy",
+    des: "A full-stack web application that allows users to save movies to a personalized watch list. With , users can easily keep track of the movies they want to watch and come back to them later.",
+    img: "/project5.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/mongodb.svg"],
+    link: "https://watch-buddy-alpha.vercel.app/",
   },
 ];
 
